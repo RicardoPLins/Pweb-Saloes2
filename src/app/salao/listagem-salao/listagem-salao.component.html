@@ -6,9 +6,8 @@
   <mat-icon>find_in_page</mat-icon>
 </button>
 
-<div class="container">
-<div class="flex-container" fxLayout="row" fxlayoutGap="16px grid">
-  <mat-card class="card-usuario" *ngFor="let salao of saloes | async">
+<div fxLayout="row wrap" fxLayout.lt-sm="column"  fxlayoutGap="16px grid">
+  <mat-card fxFlex="20" class="card-usuario" *ngFor="let salao of saloes | async">
     <mat-card-header>
       <mat-card-title>{{salao.nome | titlecase}}</mat-card-title>
       <mat-card-subtitle>{{salao.endereco}}</mat-card-subtitle>
@@ -27,4 +26,4 @@
     </mat-card-actions>
   </mat-card>
 </div>
-</div>
+
