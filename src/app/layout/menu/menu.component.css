@@ -11,7 +11,10 @@
   border-color: aliceblue;
   margin-right: auto;
 }
-
+.mat-info{
+  background-color: lightgreen;
+  border-color: gray;
+}
 .button-container {
   display: flex;
   justify-content: space-between;

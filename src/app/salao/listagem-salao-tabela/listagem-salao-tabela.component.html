@@ -2,9 +2,11 @@
   <mat-label>Filtro</mat-label>
   <input matInput placeholder="filtre por qualquer campo" (keyup)="filtrar(inputFiltro.value)" #inputFiltro>
 </mat-form-field>
-<button mat-icon-button (click)="listagem()">
-  <mat-icon>find_in_page</mat-icon>
-</button>
+<button class="button-especcial" mat-flat-button color="primary" (click)="listagem()">Filtro especial</button>
+
+<!--<button mat-icon-button (click)="listagem()" aria-label="Filtro especial">-->
+<!--  <mat-icon>find_in_page</mat-icon>-->
+<!--</button>-->
 
 <mat-table [dataSource]="dataSource">
   <mat-header-row *matHeaderRowDef="mostrarColunas"></mat-header-row>
