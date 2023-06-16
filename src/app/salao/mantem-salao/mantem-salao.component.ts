@@ -40,7 +40,7 @@ export class MantemSalaoComponent {
       );
     } else{
       this.SalaoService.atualizar(this.salaoDeManutencao).subscribe(
-        salaoAtualizado => this.mensagemService.erro('Salão atualizado com sucesso!')
+        salaoAtualizado => this.mensagemService.sucesso('Salão atualizado com sucesso!')
       )
     }
     this.salaoDeManutencao = new Salao();
